@@ -124,7 +124,7 @@ class pomodoro:NSObject{
         if Int(minute) > 60 {
             var hour = "\((Int(minute)! - (Int(minute)! % 60)) / 60)"
             minute = "\(Int(minute)! % 60)"
-            if (Int(minute)! - (Int(minute)! % 60)) / 60 < 10 {
+            if Int(hour) < 10 {
                 hour = "0" + hour
             }
             timerLabel = hour + ":" + minute + ":" + second

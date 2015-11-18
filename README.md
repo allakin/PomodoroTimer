@@ -1,15 +1,15 @@
-## Pomodoro Timer
+# Pomodoro Timer
 A simple pomodoro timer in swift
 
 Pomodoro Technique is a easy way to manage your time.This is a simple pomodoro timer class for your app.Click here to learn more about Pomodoro Technique:[wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique)
-### Usage:
+## Usage:
 ```Swift
 var pomodoroClass = pomodoro()
 ```
 
 Just use this in "AppDelegate" to initialise the timer.
 
-####Time settings
+###Time settings
 
 It will save default time to NSUserDefaults automaticly at first time.
 
@@ -96,26 +96,26 @@ var timerLabel = "00:00"
 ```
 Time remaining(In string)
 
-####!!!Timer will stop when your app turn into background!!!
+###!!!Timer will stop when your app turn into background!!!
 
 You can keep your app running by some way like play silent audio in background.
 Click here to learn more：[Apple Developer Library](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html#//apple_ref/doc/uid/TP40007072-CH4-SW23)
 
-####Download the demo to learn more
+###Download the demo to learn more
 
 ![Imgur](http://i.imgur.com/pnzF4hb.png)
 
-## Pomodoro Timer 中文说明
+# Pomodoro Timer 中文说明
 一个 Swift 制作的简易番茄计时器
 
 番茄工作法是一种简单的管理时间的方式。你可以在你的 App 中使用这个类来直接实现番茄计时器功能。点击以下链接深入了解番茄工作法:[wikipedia](https://zh.wikipedia.org/wiki/番茄工作法)
-### 用法:
+## 用法:
 ```Swift
 var pomodoroClass = pomodoro()
 ```
 
 在"AppDelegate"中添加本行代码来初始化。
-####时间设定
+###时间设定
 
 在第一次启动时，它会自动存储默认值到 NSUserDefaults 中
 
@@ -138,7 +138,7 @@ var longBreakTime = 1500 { didSet }
 
 如果你想要使用个性化的时间,重新赋值即可。修改会被自动保存到 NSUserDefaults.
 
-####连续计时
+###连续计时
 
 如果你想在计时完成后自动开始下一次计时并在几次短休息后进行长休息，可以使用以下方法。
 
@@ -169,7 +169,7 @@ pomodoroClass.start()
 ```Swift
 pomodoroClass.stop()
 ```
-####获取状态
+###获取状态
 
 
 提供了以下数据:
@@ -202,11 +202,11 @@ var timerLabel = "00:00"
 ```
 剩余时间（字符串表示）
 
-####!!!一旦 App 进入后台，计时将会停止!!!
+###!!!一旦 App 进入后台，计时将会停止!!!
 
 有一些办法可以保持你 App 的运行，比如播放无声的音频。
 点击这里了解更多：[Apple Developer Library](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/BackgroundExecution/BackgroundExecution.html#//apple_ref/doc/uid/TP40007072-CH4-SW23)
 
-####下载测试工程了解更多
+###下载测试工程了解更多
 
 ![Imgur](http://i.imgur.com/pnzF4hb.png)

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         if pomodoroClass.pomoMode == 0 {
             timer?.invalidate()
             timer = nil
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "pomoing:", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.pomoing(_:)), userInfo: nil, repeats: true)
         }
         pomodoroClass.start()
         print("Pomodoro Started")

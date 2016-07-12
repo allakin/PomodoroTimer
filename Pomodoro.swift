@@ -44,6 +44,7 @@ class pomodoro : NSObject{
     var longBreakCount = 4 { didSet { setDefaults ("pomo.longBreakCount",value: longBreakCount) } } //几个循环后进入长休息
     
     private var timer: NSTimer?
+    
     private var isDebug = false
     
     override init() {
@@ -75,7 +76,7 @@ class pomodoro : NSObject{
                     if localCount == longBreakCount - 1 {
                         pomoMode = 3
                         nowTime = longBreakTime
-                        longBreakStart()
+                        breakStart()
                     } else {
                         pomoMode += 1
                         nowTime = breakTime
@@ -195,10 +196,6 @@ class pomodoro : NSObject{
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(pomodoro.updateTimer(_:)), userInfo: nil, repeats: true)
     }
     
-    private func longBreakStart() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(pomodoro.updateTimer(_:)), userInfo: nil, repeats: true)
-    }
-    
     func stop() {
         stopTimer()
         pomoMode = 0
@@ -221,7 +218,7 @@ class pomodoro : NSObject{
         }
     }
     
-    func stopTimer() {
+    private func stopTimer() {
         timer?.invalidate()
         timer = nil
         process = 0

@@ -7,30 +7,30 @@ Pomodoro Technique is a easy way to manage your time.This is a simple pomodoro t
 var pomodoroClass = pomodoro()
 ```
 
-Just use this in "AppDelegate" to initialise the timer.
+Just use this in "AppDelegate" to initialize the timer.
 
 ###Time settings
 
-It will save default time to NSUserDefaults automaticly at first time.
+It will save default time to NSUserDefaults automatically at first time.
 
 Declaration
 
 ```Swift
-var pomoTime = 1500 { didSet }
+var pomoTime = 1500
 ```
 Work time
 
 ```Swift
-var breakTime = 1500 { didSet }
+var breakTime = 1500
 ```
 Break time
 
 ```Swift
-var longBreakTime = 1500 { didSet }
+var longBreakTime = 1500
 ```
 Long break time
 
-Set personal timer,just give it a new value.It will save your change  automaticly to NSUserDefaults.
+Set personal timer,just give it a new value.It will save your change  automatically to NSUserDefaults.
 
 ####Continuous timing
 
@@ -45,7 +45,7 @@ Long break will auto start after several short break.Like this:Working->Break->W
 Declaration
 
 ```Swift
-var longBreakCount = 4 { didSet }
+var longBreakCount = 4
 ```
 
 You can change it.
@@ -122,17 +122,17 @@ var pomodoroClass = pomodoro()
 声明
 
 ```Swift
-var pomoTime = 1500 { didSet }
+var pomoTime = 1500
 ```
 工作时间
 
 ```Swift
-var breakTime = 1500 { didSet }
+var breakTime = 1500
 ```
 休息时间
 
 ```Swift
-var longBreakTime = 1500 { didSet }
+var longBreakTime = 1500
 ```
 长时休息
 
@@ -151,7 +151,7 @@ pomodoroClass.longBreakEnable = true
 声明
 
 ```Swift
-var longBreakCount = 4 { didSet }
+var longBreakCount = 4
 ```
 
 可以改的.
@@ -210,3 +210,4 @@ var timerLabel = "00:00"
 ###下载测试工程了解更多
 
 ![Imgur](http://i.imgur.com/pnzF4hb.png)
+
